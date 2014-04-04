@@ -11,7 +11,7 @@ Collaborators:
 Homa 
 Sandra
 Ana
-Rik
-Jan
+Rik Verdonck
+Jan Aerts
 Stefan
 
