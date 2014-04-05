@@ -8,10 +8,16 @@ This is a student project. The aim is to simulate organisms in a virtual environ
 We start out with simple population models, and want to add more and more features to our organisms.
 
 Collaborators:
-Homa 
-Sandra
-Ana
-Rik Verdonck
+
+Homa Papoli
+ 
+Sandra Oliveira
+ 
+Ana Pinharanda 
+
 Jan Aerts
-Stefan
+
+Stefan Laurent
+
+Rik Verdonck  
 
