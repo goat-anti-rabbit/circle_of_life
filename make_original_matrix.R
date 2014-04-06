@@ -82,8 +82,29 @@ for(i in 1:n_loci)
   allelefrequency<-sum(populationmatrix[,i]==unique(populationmatrix[,i])[1])/popsize
   allelefrequencies<-c(allelefrequencies,allelefrequency)
 }
+
+haplotypefrequencies<-NULL
+uniquehaplotypes<-unique(populationmatrix)
+for (i in 1:nrow(uniquehaplotypes))
+{
+  counter=0
+  haplostring<-paste(uniquehaplotypes[i,],collapse="")
+  for (j in 1:nrow(populationmatrix))
+  {
+    vec<-paste(populationmatrix[j,],collapse="")
+    #print(vec)
+    if (vec == haplostring){counter=counter+1}
+  }
+  haplotypefrequencies<-c(haplotypefrequencies,counter)
+}
+
+haplotypefrequencies<-cbind(uniquehaplotypes,haplotypefrequencies)
+
+
 cat("allelefrequencies:\n")
 print(allelefrequencies)
+cat("haplotypefrequencies:\n")
+print(haplotypefrequencies)
   
 return(populationmatrix)
 }
